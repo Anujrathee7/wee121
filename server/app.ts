@@ -1,6 +1,8 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
+mongoose.set('strictQuery', false); // or true, depending on your query expectations
+
 import path from 'path';
 import { Book, IBook } from './models/Book';
 
