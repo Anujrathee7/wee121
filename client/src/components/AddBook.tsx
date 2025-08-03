@@ -32,12 +32,15 @@ const AddBook = () => {
   };
 
   return (
+    <>     <h1>books</h1>
     <form onSubmit={handleSubmit}>
       <input id="name" type="text" value={formData.name} onChange={handleChange} />
       <input id="author" type="text" value={formData.author} onChange={handleChange} />
       <input id="pages" type="number" value={formData.pages} onChange={handleChange} />
       <input id="submit" type="submit" value="Submit Book" />
     </form>
+    </>
+
   );
 };
 
