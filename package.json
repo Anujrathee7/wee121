@@ -1,12 +1,16 @@
 {
-  "name": "fullstack-books-app",
+  "name": "week12",
   "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "preinstall": "echo Installing dependencies...",
-    "install": "cd client && npm install && cd ../server && npm install",
+    "install": "cd client && npm install",
     "dev:client": "cd client && npm run dev",
-    "dev:server": "cd server && tsc-watch --onSuccess \"node dist/app.js\"",
+    "preinstall": "cd server && npm install",
+    "dev:server": "cd server && npm run dev",
     "build": "cd client && npm run build",
-    "start": "cd server && npm run start"
-  }
+    "start": "cd server && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
