@@ -13,7 +13,7 @@ mongoose.connect(mongoDB)
 mongoose.Promise = Promise
 const db: Connection = mongoose.connection
 
-app.use(express.json())
+app.use(express.json()) 
 app.use("/", router)
 
 db.on("error", console.error.bind(console, "MongoDB connection error"))
